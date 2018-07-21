@@ -36,5 +36,7 @@ public class PopActivity extends AppCompatActivity {
 //        Try not to confuse with list_view which has LinearLayout
         ListView listView = (ListView) findViewById(R.id.activity_pop);
         listView.setAdapter(musicAdapter);
+
+
     }
 }
