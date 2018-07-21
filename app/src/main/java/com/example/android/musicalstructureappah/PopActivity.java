@@ -14,17 +14,27 @@ public class PopActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view);
+//        Try not to confuse with list_view which has LinearLayout
+        setContentView(R.layout.activity_pop);
 
         ArrayList<Music> musicInfo = new ArrayList<>();
 
         musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
+        musicInfo.add(new Music("Shape of you", "Ed Sheeran"));
 
-        ArrayAdapter<Music> musicAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, musicInfo);
 
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        MusicAdapter musicAdapter = new MusicAdapter(this, musicInfo);
+//        Try not to confuse with list_view which has LinearLayout
+        ListView listView = (ListView) findViewById(R.id.activity_pop);
         listView.setAdapter(musicAdapter);
-
-
     }
 }

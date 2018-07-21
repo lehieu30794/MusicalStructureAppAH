@@ -1,4 +1,6 @@
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--This should be LinearLayout, not ListView bc will be displaying each item of the list-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,4 +8,14 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
-</ListView>
+    <TextView
+        android:id="@+id/song_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/artist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
