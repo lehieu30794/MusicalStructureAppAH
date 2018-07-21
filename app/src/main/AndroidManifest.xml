@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PopActivity" />
-        <activity android:name=".CountryActivity"></activity>
+        <activity
+            android:name=".PopActivity"
+            android:label="Pop Music" />
+        <activity
+            android:name=".CountryActivity"
+            android:label="Country Music"></activity>
     </application>
 
 </manifest>
