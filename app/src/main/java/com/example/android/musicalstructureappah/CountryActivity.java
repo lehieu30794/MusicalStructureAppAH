@@ -43,15 +43,5 @@ public class CountryActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.activity_country);
         listView.setAdapter(musicAdapter);
 
-//        LinearLayout l = (LinearLayout) findViewById(R.id.list_view);
-//        ImageButton playButton = new ImageButton(this);
-//        playButton.setImageResource(R.drawable.play_button);
-//        playButton.setLayoutParams(new LinearLayout.LayoutParams(
-//                ViewGroup.LayoutParams.MATCH_PARENT,
-//                ViewGroup.LayoutParams.MATCH_PARENT
-//        ));
-//
-//        l.addView(playButton);
-
     }
 }
